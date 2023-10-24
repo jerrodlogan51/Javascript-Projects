@@ -1,0 +1,22 @@
+body {
+    background-color: blue;
+}
+
+#grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+    justify-content: center;
+}
+
+#grid img {
+    height: 200px;
+    width: 200px;
+}
+
+@media(max-width: 800px) {
+    #grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
